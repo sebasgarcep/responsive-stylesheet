@@ -13,7 +13,7 @@ export class ResponsiveStyleSheet {
   // eslint-disable-next-line no-undef
   static hairlineWidth = StyleSheet.hairlineWidth
 
-    // eslint-disable-next-line no-undef
+  // eslint-disable-next-line no-undef
   static create = (options) => {
     return new ResponsiveStyleSheet(options)
   }
@@ -54,7 +54,7 @@ export class ResponsiveStyleSheet {
       height: responsiveProps.height
     }
 
-    return mediaQuery(selector, mediaQueryValues)
+    return mediaQuery.match(selector, mediaQueryValues)
   }
 
     // eslint-disable-next-line no-undef
